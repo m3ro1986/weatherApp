@@ -1,0 +1,102 @@
+.App {
+  width: 100vw;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.weatherBox {
+  width: 25rem;
+  height: 25rem;
+  background-color: rgba(211, 211, 211, 0.548);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  font-weight: 700;
+}
+
+.weatherBox-info{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 2rem 0;
+  place-items: center;
+  
+}
+
+.weatherBox-info_stats span {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.clearSky {
+  background-image: url('./assets/clearsky.jpg');
+}
+
+.fewClouds {
+  background-image: url('./assets/fewClouds.gif');
+}
+
+.scatteredClouds {
+  background-image: url('./assets/fewClouds.gif');
+}
+
+.brokenClouds {
+  background-image: url('./assets/fewClouds.gif');
+}
+
+.rain {
+  background-image: url('./assets/rain.gif');
+}
+
+.thunderstorm {
+  background-image: url('./assets/trueno-truenos.gif');
+}
+
+.mist {
+  background-image: url('./assets/mist.gif');
+}
+
+
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  justify-content: center;
+  
+}
+
+.stats div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stats div span{
+  margin: 0;
+  color: black;
+  font-weight: 700;
+}
+
+.buttonsBox {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.buttonsBox button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+}
